@@ -1,5 +1,5 @@
-min = input("Enter minutes: ")
-sec = input("Enter seconds: ")
-totalmin = int(min) * 60
-totalsec = int(totalmin) + int(sec)
+m = input("Enter minutes: ")
+s = input("Enter seconds: ")
+totalmin = int(m) * 60
+totalsec = int(totalmin) + int(s)
 print(totalsec)

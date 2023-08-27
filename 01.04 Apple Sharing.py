@@ -1,0 +1,6 @@
+N = input("Enter Number of Students: ")
+K = input("Enter Number of Apples: ")
+apples = int(K) / int(N)
+remainder = int(K) % int(N)
+print(int(apples))
+print(remainder)

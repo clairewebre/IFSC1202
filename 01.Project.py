@@ -1,0 +1,7 @@
+t = int(input("Enter Length of Time in Days: "))
+y = int(t // 365)
+w = int(int(t % 365) / 7)
+d = int(int(t % 365) % 7)
+print("Years: " + str(y))
+print("Weeks: " + str(w))
+print("Days: " + str(d))

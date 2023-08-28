@@ -1,0 +1,5 @@
+n = input("Enter number: ")
+o = int(int(n) % 10)
+t = int(int(n) // 10)
+print("Ones Digit: " + str(o))
+print("Tens Digit: " + str(t))

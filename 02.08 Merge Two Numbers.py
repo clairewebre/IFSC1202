@@ -1,0 +1,7 @@
+x = int(input("Enter First 2 Digit Number: "))
+y = int(input("Enter Second 2 Digit Number: "))
+a = str(x // 10)
+b = str(y // 10)
+c = str(x % 10)
+d = str(y % 10)
+print("Merged Number: " + a + b + c + d)

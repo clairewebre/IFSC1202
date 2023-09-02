@@ -8,6 +8,6 @@ elif o == "-":
 elif o == "*":
     print(str(x) + " * " + str(y) + " = " + (str(x * y)))
 elif o == "/":
-    print("str(x) + " / " + str(y) + " = " + (str(x / 2)))
+    print(str(x) + " / " + str(y) + " = " + (str(x / 2)))
 else: 
     print("Invalid Operator")

@@ -1,8 +1,8 @@
 S = int(input("Enter Start of Range: "))
 E = int(input("Enter End of Range: "))
-for i in range (S,E+1):
-    if (float(i//2) == float(i%2)):
-        print(i)
-    
-
-        
+print("Prime Numbers Between " + str(S) + " and " + str(E))
+for N in range (S, E+1):
+    for i in range (2, N//2 +1):
+        if N%i == 0 :
+            break
+    else: print(N)

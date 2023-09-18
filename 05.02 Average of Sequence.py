@@ -1,13 +1,12 @@
-sum = 0
-digits = 0
-while True:
-    n = input("Enter Number (CR to quit): ")
-    if not n:
-        break
-    else:
-        sum += int(n)
-        digits += 1
-if digits == 0:
-    print("Sequence length is 0")
+n=input("Enter Number (CR to quit): ")
+sum=0
+count=0
+while n != '':
+    sum += int(n)
+    count+=1
+    n=input("Enter Number (CR to quit): ")
+if count != 0:
+    average = sum/count
+    print("Average: {}".format(average))
 else:
-    print("Average: " + str(sum/digits))
+    print("Sequence length is 0")

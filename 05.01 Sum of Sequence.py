@@ -1,6 +1,6 @@
-n=int(input("Enter Number (CR to quit): "))
+n=input("Enter Number (CR to quit): ")
 sum=0
 while n != '':
-    sum += n
-    n=int(input("Enter Number (CR to quit): "))
+    sum += int(n)
+    n=input("Enter Number (CR to quit): ")
 print("Sum: " + str(sum))

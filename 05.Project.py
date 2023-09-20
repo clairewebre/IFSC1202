@@ -1,13 +1,17 @@
 start = int(input("Enter Start of Range: "))
 end = int(input("Enter End of Range: "))
-print("Special Numbers Between {} and {}".format(start, end))
-count = 0
+print("Special Numbers between {} and {}".format(start,end))
 for n in range (start, end+1):
-    number = int(n)
-    while n != 0:
-        n = number//10
-        count += 1
-        n = number
-    sum = ((number//10000)**count) + ((number//1000)**count) + ((number//100)**count) + ((number//10)**count) + ((number%10)**count)
-    if sum == number:
-        print(sum)      
+    length = 0
+    num = n
+    while num > 0:
+        num //= 10
+        length += 1
+    sum = 0
+    num = n
+    while num > 0:
+        digits = num % 10
+        sum += (digits**length)
+        num //= 10
+    if sum == n:
+        print(sum)

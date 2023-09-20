@@ -1,15 +1,12 @@
-n = True
-prev = 0
-i = 0
-sum = 0
-while True:
-    n = input("Enter Number (CR to quit): ")
-    if not n:
-        break
-    else:
-        if i == 0:
-            prev = n
-        if int(n) > int(prev):
-            sum += 1
-        i += 1
-print(sum)
+value = input("Enter Number (CR to quit): ")
+if value != "":
+    previousvalue = int(value)
+    previouscount = 0
+    while value != "":
+        if previousvalue < int(value):
+            previouscount += 1
+        previousvalue = int(value)
+        value = input("Enter Number (CR to quit): ")
+    print("Number of Values Greater Than the Previous: {}".format(previouscount))
+else:
+    print("Sequence length is 0")
